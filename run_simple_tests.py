@@ -16,7 +16,7 @@ class SimpleTestRunner:
     
     def run_command(self, cmd, test_name, test_type='functional'):
         """Run a test command and capture results"""
-        print(f"🚀 Running {test_name} ({test_type})...")
+        print(f" Running {test_name} ({test_type})...")
         start = time.time()
         
         try:

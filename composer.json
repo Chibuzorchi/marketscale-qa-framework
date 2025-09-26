@@ -12,7 +12,11 @@
         "laravel/tinker": "^2.8",
         "intervention/image": "^2.7",
         "pusher/pusher-php-server": "^7.0",
-        "spatie/laravel-permission": "^5.10"
+        "spatie/laravel-permission": "^5.10",
+        "symfony/css-selector": "^6.0",
+        "symfony/event-dispatcher": "^6.0",
+        "symfony/string": "^6.0",
+        "symfony/console": "^6.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

@@ -1,12 +1,12 @@
 # 🎬 MarketScale QA Framework - Portfolio Summary
 
-## 🎯 Project Overview
+## Project Overview
 
 **Repository**: [https://github.com/Chibuzorchi/marketscale-qa-framework](https://github.com/Chibuzorchi/marketscale-qa-framework)
 
 **Purpose**: Comprehensive QA automation framework demonstrating expertise for Lead QA Engineer roles, specifically tailored for MarketScale's B2B video content platform.
 
-## 🏗️ What I Built
+## What I Built
 
 ### **1. Complete Platform Mock (Laravel + Vue3)**
 - **Backend**: Laravel 10 with PHP 8.1+ (exact tech stack match)
@@ -26,7 +26,7 @@
 - **Tier 2**: Important tests (schema changes) - 15 minutes
 - **Tier 3**: Secondary tests (weekly) - 30 minutes
 
-## 🛠️ Tools & Technologies Demonstrated
+## Tools & Technologies Demonstrated
 
 ### **Exactly What MarketScale Wants:**
 - ✅ **Cypress** - "great for Vue3" (exact quote from JD)
@@ -45,7 +45,7 @@
 - ✅ **Comprehensive Reporting** - HTML and JSON reports
 - ✅ **Quality Gates** - Automatic quality validation
 
-## 📊 Test Coverage & Results
+## Test Coverage & Results
 
 ### **Functional Coverage:**
 - Video recording workflows (100%)
@@ -67,7 +67,7 @@
 - Bug detection rate: 99%+ for critical issues
 - Regression prevention: 100% for Tier 1 tests
 
-## 🚀 CI/CD Integration
+## CI/CD Integration
 
 ### **GitHub Actions Workflows:**
 - **Health Checks**: Automated environment validation
@@ -81,7 +81,7 @@
 - Daily scheduled runs
 - Manual triggers for specific test suites
 
-## 🎯 Why This Gets Me the Job
+## Why This Gets Me the Job
 
 ### **1. Shows I Understand Their Product**
 - Built a working mock of their exact platform
@@ -106,7 +106,7 @@
 - Data-driven decision making
 - Scalable architecture design
 
-## 📈 Business Impact
+## Business Impact
 
 ### **Efficiency Gains:**
 - **5x faster test execution** through parallelization
@@ -120,7 +120,7 @@
 - **Performance monitoring** ensures optimal user experience
 - **Cross-browser validation** guarantees compatibility
 
-## 🎬 MarketScale-Specific Features
+## MarketScale-Specific Features
 
 ### **Video Content Testing:**
 - Browser-based video recording validation
@@ -143,7 +143,7 @@
 - Notification systems
 - Invitation and approval flows
 
-## 🚀 How to Use This Portfolio
+## How to Use This Portfolio
 
 ### **1. Show the Repository**
 - "I built a comprehensive QA framework that demonstrates all the tools you mentioned"
@@ -161,7 +161,7 @@
 - "Here's the test report showing 95%+ success rate with proper error handling"
 - "The CI/CD pipeline runs automatically on every commit"
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Present this in interviews** - Show the working code and explain the strategy
 2. **Customize for specific roles** - Adapt the framework for different companies
@@ -175,4 +175,4 @@
 
 ---
 
-**This framework demonstrates that I'm not just applying for a job - I'm showing exactly how I'd approach the role!** 🎬✨
+**This framework demonstrates that I'm not just applying for a job - I'm showing exactly how I'd approach the role!** 

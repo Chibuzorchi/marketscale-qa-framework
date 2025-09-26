@@ -139,7 +139,7 @@ class MarketScaleTestRunner:
 
     def run_tier3_secondary(self, parallel=True):
         """Run Tier 3 Secondary tests - Weekly"""
-        print("\n📊 TIER 3 SECONDARY TESTS (Weekly)")
+        print("\n TIER 3 SECONDARY TESTS (Weekly)")
         print("=" * 60)
         
         commands = [
