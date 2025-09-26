@@ -80,9 +80,11 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'php artisan serve',
+    command: 'php artisan serve --host=0.0.0.0 --port=8000',
     url: 'http://localhost:8000',
     reuseExistingServer: !process.env.CI,
     timeout: 120 * 1000,
+    stdout: 'pipe',
+    stderr: 'pipe',
   },
 });

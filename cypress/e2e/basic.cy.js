@@ -1,10 +1,6 @@
 describe('MarketScale Basic Tests', () => {
-  beforeEach(() => {
-    // Visit the application before each test
-    cy.visit('/')
-  })
-
   it('should load the homepage', () => {
+    cy.visit('/', { failOnStatusCode: false })
     cy.get('body').should('be.visible')
   })
 

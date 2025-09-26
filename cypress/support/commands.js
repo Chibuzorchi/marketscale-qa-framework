@@ -11,6 +11,31 @@
 // Custom commands for MarketScale QA Framework
 
 /**
+ * Login user
+ */
+Cypress.Commands.add('loginAsUser', (email = 'test@marketscale.com', password = 'password') => {
+  cy.request({
+    method: 'POST',
+    url: `${Cypress.env('apiBaseUrl')}/auth/login`,
+    body: {
+      email,
+      password
+    }
+  }).then((response) => {
+    expect(response.status).to.eq(200)
+    expect(response.body.success).to.be.true
+    window.localStorage.setItem('auth_token', response.body.data.token)
+  })
+})
+
+/**
+ * Login user (alias for compatibility)
+ */
+Cypress.Commands.add('login', (email = 'test@marketscale.com', password = 'password') => {
+  cy.loginAsUser(email, password)
+})
+
+/**
  * Wait for video recording to be ready
  */
 Cypress.Commands.add('waitForVideoRecordingReady', () => {
