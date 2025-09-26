@@ -50,8 +50,29 @@ jobs:
           node-version: '18'
           cache: 'npm'
       
-      - name: Install Dependencies
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: mbstring, dom, fileinfo, mysql, sqlite
+          coverage: none
+      
+      - name: Install Node Dependencies
         run: npm ci --legacy-peer-deps
+      
+      - name: Install PHP Dependencies
+        run: composer install --no-dev --optimize-autoloader
+      
+      - name: Create Database
+        run: |
+          mkdir -p database
+          touch database/database.sqlite
+          php artisan migrate --force
+      
+      - name: Start Laravel Server
+        run: |
+          php artisan serve --host=0.0.0.0 --port=8000 &
+          sleep 10
       
       - name: Run Cypress Tests
         run: npx cypress run --headless
@@ -73,8 +94,29 @@ jobs:
           node-version: '18'
           cache: 'npm'
       
-      - name: Install Dependencies
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: mbstring, dom, fileinfo, mysql, sqlite
+          coverage: none
+      
+      - name: Install Node Dependencies
         run: npm ci --legacy-peer-deps
+      
+      - name: Install PHP Dependencies
+        run: composer install --no-dev --optimize-autoloader
+      
+      - name: Create Database
+        run: |
+          mkdir -p database
+          touch database/database.sqlite
+          php artisan migrate --force
+      
+      - name: Start Laravel Server
+        run: |
+          php artisan serve --host=0.0.0.0 --port=8000 &
+          sleep 10
       
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps ${{ matrix.browser }}

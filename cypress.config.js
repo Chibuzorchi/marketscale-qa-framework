@@ -12,6 +12,13 @@ module.exports = defineConfig({
     responseTimeout: 10000,
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      on('before:browser:launch', (browser, launchOptions) => {
+        if (browser.name === 'chrome' && browser.isHeadless) {
+          launchOptions.args.push('--no-sandbox');
+          launchOptions.args.push('--disable-setuid-sandbox');
+        }
+        return launchOptions;
+      });
     },
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
     supportFile: 'cypress/support/e2e.js',
@@ -19,6 +26,8 @@ module.exports = defineConfig({
     screenshotsFolder: 'cypress/screenshots',
     videosFolder: 'cypress/videos',
     downloadsFolder: 'cypress/downloads',
+    chromeWebSecurity: false,
+    experimentalStudio: true,
     env: {
       // Test environment variables
       API_BASE_URL: 'http://localhost:8000/api',
