@@ -1,0 +1,45 @@
+{
+    "name": "marketscale-platform-mock",
+    "version": "1.0.0",
+    "description": "MarketScale Platform Mock - B2B User-Generated Content Platform",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "test": "vitest",
+        "test:ui": "vitest --ui",
+        "test:coverage": "vitest --coverage",
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run",
+        "playwright:install": "playwright install",
+        "playwright:test": "playwright test",
+        "playwright:test:ui": "playwright test --ui"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.40.0",
+        "@vitejs/plugin-vue": "^4.4.0",
+        "@vue/test-utils": "^2.4.2",
+        "axios": "^1.6.0",
+        "cypress": "^13.6.0",
+        "jsdom": "^23.0.0",
+        "laravel-vite-plugin": "^0.8.0",
+        "sass": "^1.69.0",
+        "vite": "^5.0.0",
+        "vitest": "^1.0.0",
+        "vue": "^3.3.8"
+    },
+    "dependencies": {
+        "@headlessui/vue": "^1.7.16",
+        "@heroicons/vue": "^2.0.18",
+        "@tailwindcss/forms": "^0.5.7",
+        "@vueuse/core": "^10.5.0",
+        "axios": "^1.6.0",
+        "pinia": "^2.1.7",
+        "tailwindcss": "^3.3.6",
+        "vue": "^3.3.8",
+        "vue-router": "^4.2.5",
+        "vue-toastification": "^2.0.0-rc.5",
+        "ziggy-js": "^1.6.0"
+    }
+}
