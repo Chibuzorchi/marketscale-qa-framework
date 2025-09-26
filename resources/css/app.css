@@ -1,0 +1,28 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles for MarketScale Platform */
+.video-recorder {
+    @apply bg-gray-900 text-white rounded-lg p-6;
+}
+
+.content-card {
+    @apply bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow;
+}
+
+.btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors;
+}
+
+.btn-secondary {
+    @apply bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors;
+}
+
+.btn-success {
+    @apply bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors;
+}
+
+.btn-danger {
+    @apply bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors;
+}
